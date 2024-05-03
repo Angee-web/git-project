@@ -68,6 +68,7 @@ input {
 
 .info-header {
   font-size: 30px;
+  font-weight: bold;
 }
 
 .info-p {
@@ -84,6 +85,22 @@ input {
   width: max-content;
 }
 
+/* working on services section */
+.icons-section {
+  background-color: rgb(247, 240, 240);
+  padding: 40px 50px 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .icons-section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 /* working on footer */
 footer {
   background-color: rgb(163, 155, 155);
@@ -91,4 +108,12 @@ footer {
   padding: 4px;
   text-align: center;
   font-weight: bold;
+  width: 100vw;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    position: fixed;
+    bottom: 0;
+  }
 }
