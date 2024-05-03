@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- adding tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- adding tailwind config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+
+    <title>Landing Page</title>
+
+    <!-- adding css link -->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <!-- adding header section -->
+    <div class="header">
+      <nav class="navbar">
+        <div class="navbar-logo">Safe Haven Furniture</div>
+
+        <div>
+          <form><input type="text" name="search" placeholder="Search" /></form>
+        </div>
+
+        <div class="nav-list">
+          <ul class="navlinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- adding info section -->
+    <section>
+      <div class="info">
+        <div>
+          <h2 class="info-header">Comfortable Decor Is Our Specialty</h2>
+          <p class="info-p">
+            We sell comfortable, homey and office friendly furnitures.
+            <br />Make your comfort zone your heaven on earth. Your home is your
+            kingdom. <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nam
+            qui nostrum. <br />
+            Ipsa eveniet quam aperiam inventore tempore atque explicabo
+            nobis,<br />
+            est esse dolores accusantium molestias pariatur nisi doloremque
+            fuga.
+          </p>
+
+          <p class="info-next">Enjoy Shopping With Us</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- adding product section -->
+    <section class="product-section">
+      <div class="w-full h-[100vh]">
+        <div id="product-text">
+          <h2 class="text-center text-[30px] font-bold">Our Products</h2>
+          <p class="text-center text-lg font-bold mb-[30px]">
+            Quality Beyond Your Wildest Dreams
+          </p>
+        </div>
+
+        <!-- adding product image -->
+        <div class="max-w-[768px] m-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+          <!-- card1 -->
+          <div
+            class="w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 duration-300"
+          >
+            <img
+              src="https://media.istockphoto.com/id/1294546569/photo/teak-wood.jpg?s=2048x2048&w=is&k=20&c=Csj3iqM0wRt1BNxg-tSh0yeUYq44Ek2KfOh-ZvkxL1M="
+              alt="table"
+              width="100px"
+              height="200px"
+            />
+            <h4 class="font-bold">Mahogany Table</h4>
+            <p>Beautiful rich wooden table <br />$1.99</p>
+            <button
+              class="py-1 px-2 rounded-md text-[#fff] border-2 bg-[#b33b72] font-bold"
+            >
+              Shop Now
+            </button>
+          </div>
+
+          <!-- card2 -->
+          <div
+            class="w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 duration-300"
+          >
+            <img
+              src="https://media.istockphoto.com/id/1294546569/photo/teak-wood.jpg?s=2048x2048&w=is&k=20&c=Csj3iqM0wRt1BNxg-tSh0yeUYq44Ek2KfOh-ZvkxL1M="
+              alt="table"
+              width="100px"
+              height="200px"
+            />
+            <h4 class="font-bold">Mahogany Table</h4>
+            <p>Beautiful rich wooden table <br />$1.99</p>
+            <button
+              class="py-1 px-2 rounded-md text-[#fff] border-2 bg-[#b33b72] font-bold"
+            >
+              Shop Now
+            </button>
+          </div>
+
+          <!-- card3 -->
+          <div
+            class="w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 duration-300"
+          >
+            <img
+              src="https://media.istockphoto.com/id/1294546569/photo/teak-wood.jpg?s=2048x2048&w=is&k=20&c=Csj3iqM0wRt1BNxg-tSh0yeUYq44Ek2KfOh-ZvkxL1M="
+              alt="table"
+              width="100px"
+              height="200px"
+            />
+            <h4 class="font-bold">Mahogany Table</h4>
+            <p>Beautiful rich wooden table <br />$1.99</p>
+            <button
+              class="py-1 px-2 rounded-md text-[#fff] border-2 bg-[#b33b72] font-bold"
+            >
+              Shop Now
+            </button>
+          </div>
+
+          <!-- card4 -->
+          <div
+            class="w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 duration-300"
+          >
+            <img
+              src="https://media.istockphoto.com/id/1294546569/photo/teak-wood.jpg?s=2048x2048&w=is&k=20&c=Csj3iqM0wRt1BNxg-tSh0yeUYq44Ek2KfOh-ZvkxL1M="
+              alt="table"
+              width="100px"
+              height="200px"
+            />
+            <h4 class="font-bold">Mahogany Table</h4>
+            <p>Beautiful rich wooden table <br />$1.99</p>
+            <button
+              class="py-1 px-2 rounded-md text-[#fff] border-2 bg-[#b33b72] font-bold"
+            >
+              Shop Now
+            </button>
+          </div>
+
+          <!-- card5 -->
+          <div
+            class="w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 duration-300"
+          >
+            <img
+              src="https://media.istockphoto.com/id/1294546569/photo/teak-wood.jpg?s=2048x2048&w=is&k=20&c=Csj3iqM0wRt1BNxg-tSh0yeUYq44Ek2KfOh-ZvkxL1M="
+              alt="table"
+              width="100px"
+              height="200px"
+            />
+            <h4 class="font-bold">Mahogany Table</h4>
+            <p>Beautiful rich wooden table <br />$1.99</p>
+            <button
+              class="py-1 px-2 rounded-md text-[#fff] border-2 bg-[#b33b72] font-bold"
+            >
+              Shop Now
+            </button>
+          </div>
+
+          <!-- card6 -->
+          <div
+            class="w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 duration-300"
+          >
+            <img
+              src="https://media.istockphoto.com/id/1294546569/photo/teak-wood.jpg?s=2048x2048&w=is&k=20&c=Csj3iqM0wRt1BNxg-tSh0yeUYq44Ek2KfOh-ZvkxL1M="
+              alt="table"
+              width="100px"
+              height="200px"
+            />
+            <h4 class="font-bold">Mahogany Table</h4>
+            <p>Beautiful rich wooden table <br />$1.99</p>
+            <button
+              class="py-1 px-2 rounded-md text-[#fff] border-2 bg-[#b33b72] font-bold"
+            >
+              Shop Now
+            </button>
+          </div>
+
+          <!-- card7 -->
+          <div
+            class="w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 duration-300"
+          >
+            <img
+              src="https://media.istockphoto.com/id/1294546569/photo/teak-wood.jpg?s=2048x2048&w=is&k=20&c=Csj3iqM0wRt1BNxg-tSh0yeUYq44Ek2KfOh-ZvkxL1M="
+              alt="table"
+              width="100px"
+              height="200px"
+            />
+            <h4 class="font-bold">Mahogany Table</h4>
+            <p>Beautiful rich wooden table <br />$1.99</p>
+            <button
+              class="py-1 px-2 rounded-md text-[#fff] border-2 bg-[#b33b72] font-bold"
+            >
+              Shop Now
+            </button>
+          </div>
+
+          <!-- card8 -->
+          <div
+            class="w-full shadow-xl shadow-gray-400 rounded-xl p-4 hover:scale-105 duration-300"
+          >
+            <img
+              src="https://media.istockphoto.com/id/1294546569/photo/teak-wood.jpg?s=2048x2048&w=is&k=20&c=Csj3iqM0wRt1BNxg-tSh0yeUYq44Ek2KfOh-ZvkxL1M="
+              width="100px"
+              height="200px"
+            />
+            <h4 class="font-bold">Mahogany Table</h4>
+            <p>Beautiful rich wooden table <br />$1.99</p>
+            <button
+              class="py-1 px-2 rounded-md text-[#fff] border-2 bg-[#b33b72] font-bold"
+            >
+              Shop Now
+            </button>
+          </div>
+        </div>
+
+        <!-- adding icons section -->
+        <div class="mt-[30px] gap-8">
+          <ion-icon name="download-outline"> </ion-icon>
+          <p>
+            Download Our Catalogue and get full picture of all the splendid
+            items you can purchase.
+          </p>
+        </div>
+        <div>
+          <ion-icon name="cart-outline"></ion-icon>
+          <p>
+            Add items you want to purchase to your cart. Store items you might
+            be interested in here so that you can come back at a later date to
+            view.
+          </p>
+        </div>
+        <div>
+          <ion-icon name="bag-check-outline"></ion-icon>
+          <p>
+            Check out items you want to purchase and confirm your order with us
+            here. Be sure to rate our services as well.
+          </p>
+        </div>
+        <div>
+          <ion-icon name="wallet-outline"></ion-icon>
+          <p>
+            Pay for all your purchases here. Select from our different payment
+            options. Whatever payment option suits you.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- adding footer -->
+    <footer>Copyright &copy; 2024, Safe Haven Furniture</footer>
+    <!-- adding icons link -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
