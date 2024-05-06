@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Blog</title>
+
+    <!-- adding tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- adding tailwind config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            keyframes: {
+              animation: {
+                wiggle: "wiggle 1s ease-in-out infinite",
+              },
+              wiggle: {
+                "0%, 100%": { transform: "rotate(-3deg)" },
+                "50%": { transform: "rotate(3deg)" },
+              },
+            },
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-serif">
+    <!-- container div -->
+    <div id="container" class="grid grid-cols-1 md:grid-cols-5">
+      <!-- fisrt div -->
+      <div
+        id="first-div"
+        class="col-span-1 h-[30vh] bg-blue-400 text-white font-bold align-center p-4 md:h-[100vh]"
+      >
+        <!-- logo -->
+        <div class="text-[25px] mb-10">The Rundown📣</div>
+
+        <!-- links -->
+        <div>
+          <ul class="">
+            <li
+              class="hover:text-blue-900 mb-3 animate-[wiggle_1s_ease-in-out_infinite]"
+            >
+              <a href="#">Home</a>
+            </li>
+            <li
+              class="hover:text-blue-900 mb-3 animate-[wiggle_1s_ease-in-out_infinite]"
+            >
+              <a href="#">About </a>
+            </li>
+            <li
+              class="hover:text-blue-900 mb-3 animate-[wiggle_1s_ease-in-out_infinite]"
+            >
+              <a href="#">Stories </a>
+            </li>
+            <li
+              class="hover:text-blue-900 mb-3 animate-[wiggle_1s_ease-in-out_infinite]"
+            >
+              <a href="#">Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- start of second body lorem300000000000000000000 -->
+
+      <!-- second div -->
+      <div id="second-div" class="col-span-4 border-t-4 border-t-blue-400">
+        <!-- adding feature section -->
+        <div id="features" class="mx-2 mb-10">
+          <div class="text-center font-bold my-5 text-[30px]">
+            Featured Posts
+          </div>
+
+          <!-- cards -->
+          <div id="cards" class="grid grid-cols-1 md:grid-cols-3 gap-2">
+            <!-- card1 -->
+            <div class="card bg-blue-400 text-white font-bold p-4">
+              <div class="card-image mb-5">
+                <img
+                  src="https://media.istockphoto.com/id/2148633256/photo/information-security-data-password-under-asterisks-login-on-device.jpg?s=1024x1024&w=is&k=20&c=-qAyz35olS4f0IBohephV4SwsL1Cbj6ikD2G_Fg5dCs="
+                  alt="twitter"
+                />
+              </div>
+              <div class="card-body">
+                <div class="card-title mb-5">Wizkid's Twitter Post</div>
+                <div class="card text text-sm lowercase">
+                  The Tweet That Broke The Internet This Week<br />
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id
+                  dicta atque laudantium similique architecto, commodi quis
+                  ratione hic voluptatem, praesentium repellat fugit illum
+                  dolorum libero quidem quasi ipsa labore! Eaque?
+                </div>
+              </div>
+            </div>
+            <!-- card2 -->
+            <div class="card bg-blue-400 text-white font-bold p-4">
+              <div class="card-image mb-5">
+                <img
+                  src="https://media.istockphoto.com/id/2148633256/photo/information-security-data-password-under-asterisks-login-on-device.jpg?s=1024x1024&w=is&k=20&c=-qAyz35olS4f0IBohephV4SwsL1Cbj6ikD2G_Fg5dCs="
+                  alt="twitter"
+                />
+              </div>
+              <div class="card-body">
+                <div class="card-title mb-5">Wizkid's Twitter Post</div>
+                <div class="card text text-sm lowercase">
+                  The Tweet That Broke The Internet This Week<br />
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id
+                  dicta atque laudantium similique architecto, commodi quis
+                  ratione hic voluptatem, praesentium repellat fugit illum
+                  dolorum libero quidem quasi ipsa labore! Eaque?
+                </div>
+              </div>
+            </div>
+            <!-- card3 -->
+            <div class="card bg-blue-400 text-white font-bold p-4">
+              <div class="card-image mb-5">
+                <img
+                  class="hover:border-white"
+                  src="https://media.istockphoto.com/id/2148633256/photo/information-security-data-password-under-asterisks-login-on-device.jpg?s=1024x1024&w=is&k=20&c=-qAyz35olS4f0IBohephV4SwsL1Cbj6ikD2G_Fg5dCs="
+                  alt="twitter"
+                />
+              </div>
+              <div class="card-body">
+                <div class="card-title mb-5">Wizkid's Twitter Post</div>
+                <div class="card text text-sm lowercase">
+                  The Tweet That Broke The Internet This Week<br />
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id
+                  dicta atque laudantium similique architecto, commodi quis
+                  ratione hic voluptatem, praesentium repellat fugit illum
+                  dolorum libero quidem quasi ipsa labore! Eaque?
+                </div>
+              </div>
+            </div>
+            <!-- cards end -->
+          </div>
+          <!-- feature end -->
+        </div>
+
+        <!-- category section -->
+        <div id="cateogory">
+          <div id="category-header" class="text-center text-[30px] font-bold">
+            Select The Category You Want News On
+          </div>
+
+          <div id="category-list">
+            <ul
+              id="category-list"
+              class="flex gap-8 my-8 md:my-12 flex-wrap justify-center px-4 md:px-8 mb-10"
+            >
+              <!-- cat1 -->
+              <li
+                class="px-2 py-1 bg-red-100 text-red-800 text-lg md:text-xl rounded-lg border border-4 border-red-400 hover:bg-red-600 hover:text-white font-bold"
+              >
+                <a href="#">Sports</a>
+              </li>
+              <!-- cat2 -->
+              <li
+                class="px-2 py-1 bg-blue-100 text-blue-800 text-lg md:text-xl rounded-lg border border-4 border-blue-400 hover:bg-blue-600 hover:text-white font-bold"
+              >
+                <a href="#">Fashion</a>
+              </li>
+              <!-- cat3 -->
+              <li
+                class="px-2 py-1 bg-green-100 text-green-800 text-lg md:text-xl rounded-lg border border-4 border-green-400 hover:bg-green-600 hover:text-white font-bold"
+              >
+                <a href="#">Education</a>
+              </li>
+              <!-- cat4 -->
+              <li
+                class="px-2 py-1 bg-purple-100 text-purple-800 text-lg md:text-xl rounded-lg border border-4 border-purple-400 hover:bg-purple-600 hover:text-white font-bold"
+              >
+                <a href="#">Movies</a>
+              </li>
+              <!-- cat5 -->
+              <li
+                class="px-2 py-1 bg-pink-100 text-pink-800 text-lg md:text-xl rounded-lg border border-4 border-pink-400 hover:bg-pink-600 hover:text-white font-bold"
+              >
+                <a href="#">Music</a>
+              </li>
+              <!-- cat6 -->
+              <li
+                class="px-2 py-1 bg-orange-100 text-orange-800 text-lg md:text-xl rounded-lg border border-4 border-orange-400 hover:bg-orange-600 hover:text-white font-bold"
+              >
+                <a href="#">Gadgets</a>
+              </li>
+              <!-- cat7 -->
+              <li
+                class="px-2 py-1 bg-amber-100 text-amber-800 text-lg md:text-xl rounded-lg border border-4 border-amber-400 hover:bg-amber-600 hover:text-white font-bold"
+              >
+                <a href="#">Investment</a>
+              </li>
+              <!-- cat8 -->
+              <li
+                class="px-2 py-1 bg-pink-100 text-teal-800 text-lg md:text-xl rounded-lg border border-4 border-teal-400 hover:bg-teal-600 hover:text-white font-bold"
+              >
+                <a href="#">Business</a>
+              </li>
+            </ul>
+          </div>
+          <!-- category end -->
+        </div>
+
+        <!-- recent post section -->
+        <div
+          id="recent-posts"
+          class="bg-blue-400 text-white font-bold mx-3 p-3 pt-4"
+        >
+          <div
+            id="recent-header"
+            class="text-center text-[30px] mb-5 underline"
+          >
+            Recent Posts
+          </div>
+
+          <div id="recent-list">
+            <ul class="mx-10">
+              <!-- list1 -->
+              <li class="border border-4 border-white p-4 text-lg mb-3">
+                <h1 class="text-[20px] mb-2">
+                  "Omah Lay lays it on a little too thick"
+                </h1>
+                <p class="text-sm">
+                  Publication Date: April 24, 2024 <br />
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
+                  nihil ipsam quam minima ad fugit facere suscipit optio ipsa,
+                  voluptas quidem, molestiae at debitis maxime voluptatem
+                  incidunt laborum qui harum quasi itaque placeat? Perferendis,
+                  similique?
+                </p>
+              </li>
+              <!-- list2 -->
+              <li class="border border-4 border-white p-4 text-lg mb-3">
+                <h1 class="text-[20px] mb-2">
+                  "Omah Lay lays it on a little too thick"
+                </h1>
+                <p class="text-sm">
+                  Publication Date: April 24, 2024 <br />
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
+                  nihil ipsam quam minima ad fugit facere suscipit optio ipsa,
+                  voluptas quidem, molestiae at debitis maxime voluptatem
+                  incidunt laborum qui harum quasi itaque placeat? Perferendis,
+                  similique?
+                </p>
+              </li>
+              <!-- list3 -->
+              <li class="border border-4 border-white p-4 text-lg mb-3">
+                <h1 class="text-[20px] mb-2">
+                  "Omah Lay lays it on a little too thick"
+                </h1>
+                <p class="text-sm">
+                  Publication Date: April 24, 2024 <br />
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
+                  nihil ipsam quam minima ad fugit facere suscipit optio ipsa,
+                  voluptas quidem, molestiae at debitis maxime voluptatem
+                  incidunt laborum qui harum quasi itaque placeat? Perferendis,
+                  similique?
+                </p>
+              </li>
+              <!-- list4 -->
+              <li class="border border-4 border-white p-4 text-lg mb-3">
+                <h1 class="text-[20px] mb-2">
+                  "Omah Lay lays it on a little too thick"
+                </h1>
+                <p class="text-sm">
+                  Publication Date: April 24, 2024 <br />
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
+                  nihil ipsam quam minima ad fugit facere suscipit optio ipsa,
+                  voluptas quidem, molestiae at debitis maxime voluptatem
+                  incidunt laborum qui harum quasi itaque placeat? Perferendis,
+                  similique?
+                </p>
+              </li>
+            </ul>
+          </div>
+          <!-- recent post end -->
+        </div>
+
+        <!-- newsletter section -->
+        <div id="newsletter" class="py-8 px-4 mx-auto">
+          <h2 class="mb-3 text-3xl font-bold dark:text-white">
+            Sign Up For Our Newsletter
+          </h2>
+          <p class="mx-auto mb-5 font-bold text-lg">
+            Stay up to daye with recent news and lifestyle articles. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Nam sapiente officia
+            necessitatibus assumenda.
+          </p>
+
+          <form action="#">
+            <label class="block"
+              ><span class="text-gray-900 font-bold text-lg"
+                >Email address</span
+              >
+              <input
+                type="email"
+                class="mt-1 block w-80 border-4 border-gray-700 rounded-xl p-2"
+                placeholder="john@example.com"
+            /></label>
+
+            <label class="block mt-3"
+              ><span class="text-gray-900 font-bold text-lg">Password</span>
+              <input
+                type="password"
+                class="mt-1 block w-80 border-4 border-gray-700 rounded-xl p-2"
+            /></label>
+
+            <button
+              type="submit"
+              class="mt-4 ms-5 text-white font-bold bg-blue-400 px-7 py-1 rounded-lg hover:text-blue-700 hover:bg-white hover:border border-blue-700"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+        <!-- second div end -->
+      </div>
+      <!-- container div end -->
+    </div>
+
+    <!-- adding footer -->
+    <footer
+      class="bg-blue-400 text-white text-center p-2 flex justify-center gap-5 align-center"
+    >
+      <p class="flex align-center pt-2">Copyright &copy; 2024, The Rundown</p>
+      <p>
+        Click the Icons To Contact Us
+        <a href=""
+          ><ion-icon
+            class="hover:text-blue-900 w-7 h-6"
+            name="logo-whatsapp"
+          ></ion-icon
+        ></a>
+        <a href=""
+          ><ion-icon
+            class="hover:text-blue-900 w-7 h-6"
+            name="logo-facebook"
+          ></ion-icon
+        ></a>
+        <a href=""
+          ><ion-icon
+            class="hover:text-blue-900 w-7 h-6"
+            name="logo-instagram"
+          ></ion-icon
+        ></a>
+      </p>
+    </footer>
+
+    <!-- adding icons link -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
